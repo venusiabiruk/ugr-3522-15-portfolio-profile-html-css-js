@@ -1,0 +1,242 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+/* Styling the header */
+header {
+    position: absolute;
+    position: sticky;
+    background-color: rgba(207, 203, 251, 0.6);
+    height: 93px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+/* Left side of the navbar */
+#header_left {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(75, 59, 241, 0.7);
+    padding-left: 3%;
+}
+
+/* Header navigation menu */
+.header-navigation ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-navigation li {
+    margin-right: 50px;
+}
+
+/* Navigation links */
+.header-navigation a {
+    text-decoration: none;
+    color: #130878; /* Ensuring consistent link color */
+    display: block;
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Hover effect */
+.header-navigation a:hover {
+    background-color: rgba(19, 8, 120, 0.2);
+}
+
+.header-navigation a.active {
+    background-color: #130878;
+    color: white;
+}
+
+
+/* Social icons container */
+.icons_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons_container img {
+    width: 20px;
+    height: auto;
+}
+
+.menu{
+    display: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1097px) {
+   .header-navigation {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 93px;
+        right: 0;
+        background-color: rgba(207, 203, 251, 0.4);
+        width: 120px;
+        z-index: 1000;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+    .header-navigation.active {
+    display: flex;
+    background-color: rgba(100, 100, 255, 0.3); /* Temporary highlight */
+        }
+
+
+    .menu {
+        display: block; 
+        cursor: pointer;
+    }
+
+    .header-navigation a {
+        color: #130878; 
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .icons_container {
+        margin-left: auto;
+    }
+
+    
+
+    .icons_container {
+        margin-left: auto;
+    }
+   
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(207, 203, 251, 0.6);
+    text-align: center;
+    padding: 10px;
+    font-size: 32px;
+    color: rgba(75, 59, 241, 0.7);
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure footer spans the viewport width */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for child elements */
+    justify-content: center; /* Center footer items horizontally */
+    align-items: center; /* Center footer items vertically */
+    gap: 50px;
+    box-sizing: border-box;
+    height: auto; 
+}
+
+/* Footer Text */
+footer p {
+    margin: 5px 0;
+}
+
+.st {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap within this container */
+    justify-content: center; /* Center items horizontally */
+    text-align: center; /* Center text inside each item */
+    gap: 50px; /* Add spacing between items */
+}
+
+footer .thrid {
+    margin-left: 0; /* Remove large margin that pushes content */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 823px) {
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    footer .st {
+        flex-direction: column;
+        width: 100%; 
+        gap: 0px;
+    }
+
+
+    footer p {
+        font-size: 24px;
+    }
+    .firsr{
+        margin-bottom: 0%;
+
+    }
+}
+@media (max-width: 795px){
+    .header-navigation { 
+        top: 50px;
+    }
+
+}
+
+/* Section (Main Content) */
+section {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #EFEBFF;
+}
+
+/* Handle the Image Responsiveness */
+.image {
+    margin-right: 10%;
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
+}
+
+.textsH {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+section p {
+    color: rgba(75, 59, 241, 0.6);
+    font-size: 20px;
+}
+
+section h1 h3 {
+    color: #0C003D;
+}
+
+@media (max-width: 480px){
+    .Home{
+        flex-direction: column;
+    }
+}
