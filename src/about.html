@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
    <header>
@@ -11,10 +12,9 @@
         <div id="header_left">
             Venusia
         </div>
-        <div class="menu"><img src="images/menu.png" alt="menu-icon"></div>
         <div class="header-navigation">
             <ul>
-                <li><a href="./home.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./education.html">Education</a></li>
                 <li><a href="./cv.html">CV</a></li>
@@ -26,13 +26,13 @@
             <a href="https://github.com/venusiabiruk"><img src="images/icon2.png" alt="github-icon"></a>
             <a href="http://t.me/venabb"><img src="images/icon3.png" alt="telegram-icon"></a>
         </div>
+        <div class="menu"><img src="images/menu.png" alt="menu-icon"></div>
     </div>
 </header>
 <section id="aboout_page-section1">
-    <h2>Venusia Biruk</h2>
+    <div class="content1"><img src="./images/personal.png" alt="personal-photo">
+    <div class="pandA"><h2>Venusia Biruk</h2>
     <h3>Web Developer</h3>
-    <img src="images/personal.jpg" alt="personal-photo">
-    <h4>Personal Information</h4>
     <article class="personal_information">
         <h2>Personal Information</h2>
         <table>
@@ -67,31 +67,34 @@
     <div class="adventures">
         <h4>adventures</h4>
         <p>Studying software engineering at Addis Ababa University has been an exciting journey. Each project is an adventure, pushing my skills in web development and expanding my problem-solving abilities. I'm eager to see where this path in tech leads me next.</p>
-    </div>
+    </div></div></div>
+    
 
-    <div class="hobbies">
+    <div class="Handv"> <div class="hobbies">
         <h4>Hobbies</h4>
         <p>I enjoy immersing myself in Orthodox Christian music for its spiritual depth, exploring historical events and stories, staying updated on the latest in technology, and appreciating the beauty of nature.</p>
     </div>
-    <video controls>
+    <video controls class="video">
         <source src="images/video.mp4" type="video/mp4">
     
     </video>
+    </div> 
+    
 
-    <div class="interest">
+   <div class="IandA"><div class="interest">
         <h4>Interest</h4>
         <p>I'm passionate about discovering new technologies, learning about different cultures and histories, and exploring ways to connect my tech skills with my appreciation for natural and cultural preservation.</p>
     </div>
-     <audio controls>
+     <audio controls class="audio">
         <source src="images/audio.mp3" type="audio/mp3">
     </audio>
-    
+    </div> 
 </section>
 <footer>
     <p class="first">&copy; copy right Venusia,</p>
-    <p class="second">All rights reserved.</p> 
-    <p class="thrid">Designed by Venusia</p>
+    <div class = st><p class="second">All rights reserved.</p> 
+    <p class="thrid">Designed by Venusia</p></div>
 </footer>
- 
+<script src="script.js"></script>
 </body>
 </html>

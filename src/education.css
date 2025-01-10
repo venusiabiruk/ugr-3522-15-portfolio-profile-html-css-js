@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden; 
+}
+/* style the header */
+header {
+    background-color: rgba(207, 203, 251, 0.6);
+    height: 93px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+}
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+/* Left side of the navbar */
+#header_left {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(75, 59, 241, 0.7);
+    padding-left: 3%;
+}
+
+/* Header navigation menu */
+.header-navigation ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-navigation li {
+    margin-right: 50px;
+}
+
+/* Navigation links */
+.header-navigation a {
+    text-decoration: none;
+    color: #130878; 
+    display: block;
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Hover effect */
+.header-navigation a:hover {
+    background-color: rgba(19, 8, 120, 0.2);
+}
+
+.header-navigation a.active {
+    background-color: #130878;
+    color: white;
+}
+
+
+/* Social icons container */
+.icons_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons_container img {
+    width: 20px;
+    height: auto;
+}
+
+.menu{
+    display: none;
+}
+.sec {
+    display: none;
+  }
+
+@media (max-width: 1097px) {
+   .header-navigation {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 93px;
+        right: 0;
+        background-color: rgba(207, 203, 251, 0.4);
+        width: 120px;
+        z-index: 1000;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+    .header-navigation.active {
+        display: flex;
+        background-color: rgba(100, 100, 255, 0.3); 
+    }
+
+
+    .menu {
+        display: block; 
+        cursor: pointer;
+    }
+
+    .header-navigation a {
+        color: #130878; 
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .icons_container {
+        margin-left: auto;
+    }
+
+    
+
+    .icons_container {
+        margin-left: auto;
+    }
+   
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(207, 203, 251, 0.6);
+    text-align: center;
+    padding: 10px;
+    font-size: 32px;
+    color: rgba(75, 59, 241, 0.7);
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    gap: 50px;
+    box-sizing: border-box;
+    height: auto; 
+}
+
+/* Footer Text */
+footer p {
+    margin: 5px 0;
+}
+
+.st {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    text-align: center; 
+    gap: 50px; 
+}
+
+footer .thrid {
+    margin-left: 0; 
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 823px) {
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    footer .st {
+        flex-direction: column;
+        width: 100%; 
+        gap: 0px;
+    }
+
+
+    footer p {
+        font-size: 24px;
+    }
+    .firsr{
+        margin-bottom: 0%;
+
+    }
+}
+
+/* styling the main */
+#Education{
+    padding-top: 7%;
+    background-color: #EFEBFF;
+}
+section h2{
+    margin-left: 5%;
+}
+section p{
+    padding-top: 3%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    color: rgba(75, 59, 241, 0.7);
+    font-size: 20px;
+
+}
+section img{
+    width: 35%;
+    height: 215px;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    margin-left: 3%;
+}
+
+@media (max-width: 823px){
+    #Education{
+        display: flex;
+    }
+    .imgs{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec {
+    display: block;
+
+  }
+  .t{
+    display: flex;
+  }
+
+  .sec p {
+    color: rgba(75, 59, 241, 0.7);
+  }
+  .sec  img{
+    width: 35%;
+    height: 215px;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+ .sec h2{
+    color: #0C003D;
+ }
+ .sec{
+    background-color: #EFEBFF;
+ }
+
+  #Education{
+    display: none;
+  }
+  .pi{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+  }
+  .th{
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  
+  .sec{
+    display: none;
+  }
+  #Education {
+    display:block;
+    display: flex;
+    flex-direction: column;
+  }
+}
